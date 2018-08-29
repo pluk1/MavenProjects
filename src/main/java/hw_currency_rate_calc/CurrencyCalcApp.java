@@ -61,7 +61,7 @@ public class CurrencyCalcApp {
     private static void initRates() {
         RestTemplate restTemplate = new RestTemplate();
         HttpHeaders headers = new HttpHeaders();
-        String url = "http://data.fixer.io/api/latest?access_key=879b5e4122c039fccc7c041d7d02163f";
+        String url = "http://data.fixer.io/api/latest?access_key=";
         HttpEntity<String> requestEntity = new HttpEntity<>(headers);
         ResponseEntity<Currencies> response = restTemplate.exchange(url, HttpMethod.GET,
                 requestEntity, Currencies.class);
