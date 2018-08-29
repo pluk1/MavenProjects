@@ -71,18 +71,16 @@ public class CurrencyCalcApp {
 
     private static double convertCurrency(String currencyFrom, String currencyTo, double amount) {
 
-
         if (currencyFrom.equals("EUR")) {
 
-            return rates.get(currencyFrom) * amount;
+            return rates.get(currencyTo) * amount;
 
-        } else if (currencyTo.equals("EUR")) {
-
-            return rates.get(currencyFrom) / amount;
         } else {
 
             return rates.get(currencyTo) / rates.get(currencyFrom) * amount;
         }
+
     }
+
 
 }

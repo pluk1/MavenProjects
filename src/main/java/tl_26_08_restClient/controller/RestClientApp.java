@@ -31,6 +31,5 @@ public class RestClientApp {
         System.out.println(postResponse.getStatusCode());
 
         //https://fixer.io/
-
     }
 }
