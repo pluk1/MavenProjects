@@ -8,7 +8,6 @@ import java.util.Map;
 
 public class Currencies {
     private String currency;
-    private int price;
     private String success;
     private int timestamp;
     private String base;
@@ -22,10 +21,6 @@ public class Currencies {
 
     public String getCurrency() {
         return currency;
-    }
-
-    public int getPrice() {
-        return price;
     }
 
     public String getSuccess() {
@@ -52,7 +47,6 @@ public class Currencies {
     public String toString() {
         return "Currencies{" +
                 "currency='" + currency + '\'' +
-                ", price=" + price +
                 ", success='" + success + '\'' +
                 ", timestamp=" + timestamp +
                 ", base='" + base + '\'' +
