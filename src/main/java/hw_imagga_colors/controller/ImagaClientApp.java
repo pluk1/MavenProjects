@@ -35,7 +35,6 @@ public class ImagaClientApp {
         displayColors(info);
         displayImageColors(info);
 
-
     }
 
     private static void displayColors(Info info) {
